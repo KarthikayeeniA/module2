@@ -1,0 +1,9 @@
+# Terminating a specific process: 	
+Get-Process -Name "totally_not_malicious"	
+taskkill /F /PID 	[ID]
+Get-Process -Name "totally_not_malicious" 
+# Terminating multiple processes: 	
+Get-Process -Name "razzle"	
+taskkill /F /PID [ID]
+taskkill /F /PID [ID]	
+Get-Process -Name "razzle"
